@@ -13,7 +13,7 @@
 						<th>Klr Id</th>
 						<th>Brg Id</th>
 						<th>Rsl Id</th>
-						<th>Klr Jmlah</th>
+                        <th>Klr Jumlah</th>
 						<th>Actions</th>
                     </tr>
                     <?php foreach($barang_keluar as $b){ ?>

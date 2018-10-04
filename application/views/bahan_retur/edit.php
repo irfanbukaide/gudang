@@ -40,7 +40,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="rtr_jmlah" class="control-label">Rtr Jmlah</label>
+                        <label for="rtr_jmlah" class="control-label">Rtr Jumlah</label>
 						<div class="form-group">
 							<input type="text" name="rtr_jmlah" value="<?php echo ($this->input->post('rtr_jmlah') ? $this->input->post('rtr_jmlah') : $barang_retur['rtr_jmlah']); ?>" class="form-control" id="rtr_jmlah" />
 							<span class="text-danger"><?php echo form_error('rtr_jmlah');?></span>

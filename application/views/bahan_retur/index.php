@@ -13,7 +13,7 @@
 						<th>Rtr Id</th>
 						<th>Brg Id</th>
 						<th>Rsl Id</th>
-						<th>Rtr Jmlah</th>
+                        <th>Rtr Jumlah</th>
 						<th>Actions</th>
                     </tr>
                     <?php foreach ($bahan_retur as $b) { ?>

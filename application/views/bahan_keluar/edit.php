@@ -40,7 +40,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="klr_jmlah" class="control-label">Klr Jmlah</label>
+                        <label for="klr_jmlah" class="control-label">Klr Jumlah</label>
 						<div class="form-group">
 							<input type="text" name="klr_jmlah" value="<?php echo ($this->input->post('klr_jmlah') ? $this->input->post('klr_jmlah') : $barang_keluar['klr_jmlah']); ?>" class="form-control" id="klr_jmlah" />
 							<span class="text-danger"><?php echo form_error('klr_jmlah');?></span>

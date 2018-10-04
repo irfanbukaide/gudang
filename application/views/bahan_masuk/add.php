@@ -24,7 +24,7 @@
 						</div>
 					</div>
                     <div class="col-md-4">
-                        <label for="msk_bahan" class="control-label">Jmlah. Bahan</label>
+                        <label for="msk_bahan" class="control-label">Jumlah Bahan</label>
 						<div class="form-group">
                             <input type="number" name="msk_bahan" placeholder="Jumlah Bahan"
                                    value="<?php echo $this->input->post('msk_bahan'); ?>" class="form-control"
@@ -33,7 +33,7 @@
 						</div>
 					</div>
                     <div class="col-md-4">
-                        <label for="msk_olah_rusak" class="control-label">Jmlah Bahan Rusak</label>
+                        <label for="msk_olah_rusak" class="control-label">Jumlah Sablon/Bordir Rusak</label>
 						<div class="form-group">
                             <input type="number" name="msk_olah_rusak" placeholder="Jumlah Bahan Rusak"
                                    value="<?php echo $this->input->post('msk_olah_rusak'); ?>" class="form-control"
@@ -42,7 +42,7 @@
 						</div>
 					</div>
                     <div class="col-md-4">
-                        <label for="msk_jahit_rusak" class="control-label">Jmlah Jahitan Rusak</label>
+                        <label for="msk_jahit_rusak" class="control-label">Jumlah Jahitan Rusak</label>
 						<div class="form-group">
                             <input type="number" name="msk_jahit_rusak" placeholder="Jumlah Jahitan Rusak"
                                    value="<?php echo $this->input->post('msk_jahit_rusak'); ?>" class="form-control"

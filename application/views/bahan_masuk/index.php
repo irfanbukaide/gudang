@@ -11,9 +11,9 @@
                 <table class="table table-striped">
                     <tr>
                         <th>Bahan</th>
-						<th>Msk Bahan</th>
-						<th>Msk Olah Rusak</th>
-						<th>Msk Jahit Rusak</th>
+                        <th>Jumlah Bahan</th>
+                        <th>Jumlah Sablon/Bordir Rusak</th>
+                        <th>Jumlah Jahitan Rusak</th>
 						<th>Actions</th>
                     </tr>
                     <?php foreach ($bahan_masuk as $b) { ?>

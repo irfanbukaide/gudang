@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="msk_bahan" class="control-label">Msk Bahan</label>
+                        <label for="msk_bahan" class="control-label">Jumlah Bahan</label>
 						<div class="form-group">
                             <input type="text" name="msk_bahan"
                                    value="<?php echo($this->input->post('msk_bahan') ? $this->input->post('msk_bahan') : $bahan_masuk['msk_bahan']); ?>"
@@ -33,7 +33,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="msk_olah_rusak" class="control-label">Msk Olah Rusak</label>
+                        <label for="msk_olah_rusak" class="control-label">Jumlah Sablon/Bordir Rusak</label>
 						<div class="form-group">
                             <input type="text" name="msk_olah_rusak"
                                    value="<?php echo($this->input->post('msk_olah_rusak') ? $this->input->post('msk_olah_rusak') : $bahan_masuk['msk_olah_rusak']); ?>"
@@ -42,7 +42,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="msk_jahit_rusak" class="control-label">Msk Jahit Rusak</label>
+                        <label for="msk_jahit_rusak" class="control-label">Jumlah Jahitan Rusak</label>
 						<div class="form-group">
                             <input type="text" name="msk_jahit_rusak"
                                    value="<?php echo($this->input->post('msk_jahit_rusak') ? $this->input->post('msk_jahit_rusak') : $bahan_masuk['msk_jahit_rusak']); ?>"
