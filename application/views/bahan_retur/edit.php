@@ -2,22 +2,22 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">Barang Keluar Edit</h3>
+                <h3 class="box-title">Bahan Retur Edit</h3>
             </div>
-			<?php echo form_open('barang_keluar/edit/'.$barang_keluar['klr_id']); ?>
+            <?php echo form_open('bahan_retur/edit/' . $bahan_retur['rtr_id']); ?>
 			<div class="box-body">
 				<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="brg_id" class="control-label">Barang</label>
+                        <label for="brg_id" class="control-label">Bahan</label>
 						<div class="form-group">
 							<select name="brg_id" class="form-control">
-								<option value="">select barang</option>
-								<?php 
-								foreach($all_barang as $barang)
+                                <option value="">select bahan</option>
+								<?php
+                                foreach ($all_bahan as $bahan)
 								{
-									$selected = ($barang['brg_id'] == $barang_keluar['brg_id']) ? ' selected="selected"' : "";
+                                    $selected = ($bahan['brg_id'] == $bahan_retur['brg_id']) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$barang['brg_id'].'" '.$selected.'>'.$barang['brg_fast'].'</option>';
+                                    echo '<option value="' . $bahan['brg_id'] . '" ' . $selected . '>' . $bahan['brg_fast'] . '</option>';
 								} 
 								?>
 							</select>
@@ -31,7 +31,7 @@
 								<?php 
 								foreach($all_reseller as $reseller)
 								{
-									$selected = ($reseller['rsl_id'] == $barang_keluar['rsl_id']) ? ' selected="selected"' : "";
+									$selected = ($reseller['rsl_id'] == $barang_retur['rsl_id']) ? ' selected="selected"' : "";
 
 									echo '<option value="'.$reseller['rsl_id'].'" '.$selected.'>'.$reseller['rsl_nama'].'</option>';
 								} 
@@ -40,10 +40,10 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="klr_jmlah" class="control-label">Klr Jmlah</label>
+						<label for="rtr_jmlah" class="control-label">Rtr Jmlah</label>
 						<div class="form-group">
-							<input type="text" name="klr_jmlah" value="<?php echo ($this->input->post('klr_jmlah') ? $this->input->post('klr_jmlah') : $barang_keluar['klr_jmlah']); ?>" class="form-control" id="klr_jmlah" />
-							<span class="text-danger"><?php echo form_error('klr_jmlah');?></span>
+							<input type="text" name="rtr_jmlah" value="<?php echo ($this->input->post('rtr_jmlah') ? $this->input->post('rtr_jmlah') : $barang_retur['rtr_jmlah']); ?>" class="form-control" id="rtr_jmlah" />
+							<span class="text-danger"><?php echo form_error('rtr_jmlah');?></span>
 						</div>
 					</div>
 				</div>

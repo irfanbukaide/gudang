@@ -2,22 +2,22 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">Barang Keluar Add</h3>
+                <h3 class="box-title">Bahan Retur Add</h3>
             </div>
-            <?php echo form_open('barang_keluar/add'); ?>
+            <?php echo form_open('bahan_retur/add'); ?>
           	<div class="box-body">
           		<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="brg_id" class="control-label">Barang</label>
+                        <label for="brg_id" class="control-label">Bahan</label>
 						<div class="form-group">
 							<select name="brg_id" class="form-control">
-								<option value="">select barang</option>
-								<?php 
-								foreach($all_barang as $barang)
+                                <option value="">select bahan</option>
+								<?php
+                                foreach ($all_bahan as $bahan)
 								{
-									$selected = ($barang['brg_id'] == $this->input->post('brg_id')) ? ' selected="selected"' : "";
+                                    $selected = ($bahan['brg_id'] == $this->input->post('brg_id')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$barang['brg_id'].'" '.$selected.'>'.$barang['brg_fast'].'</option>';
+                                    echo '<option value="' . $bahan['brg_id'] . '" ' . $selected . '>' . $bahan['brg_fast'] . '</option>';
 								} 
 								?>
 							</select>
@@ -40,10 +40,10 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="klr_jmlah" class="control-label">Klr Jmlah</label>
+						<label for="rtr_jmlah" class="control-label">Rtr Jmlah</label>
 						<div class="form-group">
-							<input type="text" name="klr_jmlah" value="<?php echo $this->input->post('klr_jmlah'); ?>" class="form-control" id="klr_jmlah" />
-							<span class="text-danger"><?php echo form_error('klr_jmlah');?></span>
+							<input type="text" name="rtr_jmlah" value="<?php echo $this->input->post('rtr_jmlah'); ?>" class="form-control" id="rtr_jmlah" />
+							<span class="text-danger"><?php echo form_error('rtr_jmlah');?></span>
 						</div>
 					</div>
 				</div>

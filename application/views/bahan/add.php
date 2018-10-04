@@ -2,9 +2,9 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h2 class="box-title"><span>Barang - Tambah Data</span></h2>
+                <h2 class="box-title"><span>Bahan - Tambah Data</span></h2>
             </div>
-            <?php echo form_open('barang/add'); ?>
+            <?php echo form_open('bahan/add'); ?>
           	<div class="box-body">
           		<div class="row clearfix">
                     <div class="col-md-12">
@@ -64,7 +64,7 @@
             	<button type="submit" class="btn btn-success">
             		<i class="fa fa-check"></i> Save
             	</button>
-                <a href="<?php echo site_url('barang/index');?>" class="btn btn-danger">
+                <a href="<?php echo site_url('bahan/index'); ?>" class="btn btn-danger">
                     <i class="fa fa-times"></i> Cancel
                 </a>
           	</div>

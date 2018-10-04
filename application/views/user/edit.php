@@ -49,6 +49,9 @@
             	<button type="submit" class="btn btn-success">
 					<i class="fa fa-check"></i> Save
 				</button>
+                <a href="<?php echo site_url('user/index'); ?>" class="btn btn-danger">
+                    <i class="fa fa-times"></i> Cancel
+                </a>
 	        </div>				
 			<?php echo form_close(); ?>
 		</div>

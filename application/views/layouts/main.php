@@ -102,8 +102,8 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <a href="<?php echo site_url('barang/index');?>">
-                                        <i class="fa fa-archive"></i> <span>Barang</span>
+                                    <a href="<?php echo site_url('bahan/index'); ?>">
+                                        <i class="fa fa-archive"></i> <span>Bahan</span>
                                     </a>
                                 </li>
                                 <li>
@@ -124,18 +124,18 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <a href="<?php echo site_url('barang_keluar/index');?>">
-                                        <i class="fa fa-arrow-circle-o-up"></i> <span>Barang Keluar</span>
+                                    <a href="<?php echo site_url('bahan_keluar/index'); ?>">
+                                        <i class="fa fa-arrow-circle-o-up"></i> <span>Bahan Keluar</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('barang_masuk/index');?>">
-                                        <i class="fa fa-arrow-circle-o-down"></i> <span>Barang Masuk</span>
+                                    <a href="<?php echo site_url('bahan_masuk/index'); ?>">
+                                        <i class="fa fa-arrow-circle-o-down"></i> <span>Bahan Masuk</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('barang_retur/index');?>">
-                                        <i class="fa fa-arrow-circle-o-right"></i> <span>Barang Retur</span>
+                                    <a href="<?php echo site_url('bahan_retur/index'); ?>">
+                                        <i class="fa fa-arrow-circle-o-right"></i> <span>Bahan Retur</span>
                                     </a>
                                 </li>
                             </ul>
@@ -147,12 +147,12 @@
                             <ul class="treeview-menu">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-bar-chart"></i> <span>Laporan Barang Masuk</span>
+                                        <i class="fa fa-bar-chart"></i> <span>Laporan Bahan Masuk</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-bar-chart"></i> <span>Laporan Barang Keluar</span>
+                                        <i class="fa fa-bar-chart"></i> <span>Laporan Bahan Keluar</span>
                                     </a>
                                 </li>
                             </ul>

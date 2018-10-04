@@ -16,7 +16,7 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`gudang` /*!40100 DEFAULT CHARACTER SET 
 
 USE `gudang`;
 
-/*Table structure for table `barang` */
+/*Table structure for table `bahan` */
 
 DROP TABLE IF EXISTS `barang`;
 
@@ -35,12 +35,12 @@ CREATE TABLE `barang` (
   PRIMARY KEY (`brg_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
-/*Data for the table `barang` */
+/*Data for the table `bahan` */
 
 insert  into `barang`(`brg_id`,`brg_data`,`brg_kode`,`brg_fast`,`brg_paloma`,`brg_hrg_pokok`,`brg_hrg_jual`,`brg_status`,`created_at`,`updated_at`,`deleted_at`) values 
 (3,'','FAD',0,0,10000.00,10000.00,'AVAILABLE',NULL,NULL,NULL);
 
-/*Table structure for table `barang_keluar` */
+/*Table structure for table `bahan_keluar` */
 
 DROP TABLE IF EXISTS `barang_keluar`;
 
@@ -55,9 +55,9 @@ CREATE TABLE `barang_keluar` (
   PRIMARY KEY (`klr_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `barang_keluar` */
+/*Data for the table `bahan_keluar` */
 
-/*Table structure for table `barang_masuk` */
+/*Table structure for table `bahan_masuk` */
 
 DROP TABLE IF EXISTS `barang_masuk`;
 
@@ -75,9 +75,9 @@ CREATE TABLE `barang_masuk` (
   CONSTRAINT `barang_masuk_ibfk_1` FOREIGN KEY (`brg_id`) REFERENCES `barang` (`brg_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `barang_masuk` */
+/*Data for the table `bahan_masuk` */
 
-/*Table structure for table `barang_retur` */
+/*Table structure for table `bahan_retur` */
 
 DROP TABLE IF EXISTS `barang_retur`;
 
@@ -92,7 +92,7 @@ CREATE TABLE `barang_retur` (
   PRIMARY KEY (`rtr_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `barang_retur` */
+/*Data for the table `bahan_retur` */
 
 /*Table structure for table `reseller` */
 

@@ -2,13 +2,13 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">Barang Retur Add</h3>
+                <h3 class="box-title">Bahan Keluar Add</h3>
             </div>
-            <?php echo form_open('barang_retur/add'); ?>
+            <?php echo form_open('bahan_keluar/add'); ?>
           	<div class="box-body">
           		<div class="row clearfix">
 					<div class="col-md-6">
-						<label for="brg_id" class="control-label">Barang</label>
+                        <label for="brg_id" class="control-label">Bahan</label>
 						<div class="form-group">
 							<select name="brg_id" class="form-control">
 								<option value="">select barang</option>
@@ -40,10 +40,10 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label for="rtr_jmlah" class="control-label">Rtr Jmlah</label>
+						<label for="klr_jmlah" class="control-label">Klr Jmlah</label>
 						<div class="form-group">
-							<input type="text" name="rtr_jmlah" value="<?php echo $this->input->post('rtr_jmlah'); ?>" class="form-control" id="rtr_jmlah" />
-							<span class="text-danger"><?php echo form_error('rtr_jmlah');?></span>
+							<input type="text" name="klr_jmlah" value="<?php echo $this->input->post('klr_jmlah'); ?>" class="form-control" id="klr_jmlah" />
+							<span class="text-danger"><?php echo form_error('klr_jmlah');?></span>
 						</div>
 					</div>
 				</div>

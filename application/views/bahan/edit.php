@@ -2,30 +2,36 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h2 class="box-title"><span>Barang - Ubah Data</span></h2>
+                <h2 class="box-title"><span>Bahan - Ubah Data</span></h2>
             </div>
-			<?php echo form_open('barang/edit/'.$barang['brg_id']); ?>
+            <?php echo form_open('bahan/edit/' . $bahan['brg_id']); ?>
 			<div class="box-body">
 				<div class="row clearfix">
                     <div class="col-md-12">
                         <label for="brg_kode" class="control-label">Kode Item</label>
                         <div class="form-group">
-                            <input type="text" name="brg_kode" placeholder="Kode Item" value="<?php echo ($this->input->post('brg_kode') ? $this->input->post('brg_kode') : $barang['brg_kode']); ?>" class="form-control" id="brg_kode" />
+                            <input type="text" name="brg_kode" placeholder="Kode Item"
+                                   value="<?php echo($this->input->post('brg_kode') ? $this->input->post('brg_kode') : $bahan['brg_kode']); ?>"
+                                   class="form-control" id="brg_kode"/>
                         </div>
                     </div>
 					<div class="col-md-12">
                         <div class="checkbox">
-                            <label><input type="checkbox" name="brg_fast" value="<?php echo ($this->input->post('brg_fast') ? $this->input->post('brg_fast') : $barang['brg_fast']); ?>" id="brg_fast">Fast</label>
+                            <label><input type="checkbox" name="brg_fast"
+                                          value="<?php echo($this->input->post('brg_fast') ? $this->input->post('brg_fast') : $bahan['brg_fast']); ?>"
+                                          id="brg_fast">Fast</label>
                         </div>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="brg_paloma" value="<?php echo ($this->input->post('brg_paloma') ? $this->input->post('brg_paloma') : $barang['brg_paloma']); ?>" id="brg_paloma">Paloma</label>
+                            <label><input type="checkbox" name="brg_paloma"
+                                          value="<?php echo($this->input->post('brg_paloma') ? $this->input->post('brg_paloma') : $bahan['brg_paloma']); ?>"
+                                          id="brg_paloma">Paloma</label>
                         </div>
 					</div>
 					<div class="col-md-12">
 						<label for="brg_hrg_pokok" class="control-label">Harga Pokok</label>
 						<div class="form-group">
                             <input type="number" name="brg_hrg_pokok"
-                                   value="<?php echo($this->input->post('brg_hrg_pokok') ? $this->input->post('brg_hrg_pokok') : $barang['brg_hrg_pokok']); ?>"
+                                   value="<?php echo($this->input->post('brg_hrg_pokok') ? $this->input->post('brg_hrg_pokok') : $bahan['brg_hrg_pokok']); ?>"
                                    class="form-control" id="brg_hrg_pokok"/>
 						</div>
 					</div>
@@ -33,7 +39,7 @@
 						<label for="brg_hrg_jual" class="control-label">Harga Jual</label>
 						<div class="form-group">
                             <input type="number" name="brg_hrg_jual"
-                                   value="<?php echo($this->input->post('brg_hrg_jual') ? $this->input->post('brg_hrg_jual') : $barang['brg_hrg_jual']); ?>"
+                                   value="<?php echo($this->input->post('brg_hrg_jual') ? $this->input->post('brg_hrg_jual') : $bahan['brg_hrg_jual']); ?>"
                                    class="form-control" id="brg_hrg_jual"/>
 						</div>
 					</div>
@@ -50,7 +56,7 @@
 
                                 foreach($brg_status_values as $value => $display_text)
                                 {
-                                    $selected = ($value == $barang['brg_status']) ? ' selected="selected"' : "";
+                                    $selected = ($value == $bahan['brg_status']) ? ' selected="selected"' : "";
 
                                     echo '<option value="'.$value.'" '.$selected.'>'.$display_text.'</option>';
                                 }
@@ -64,7 +70,7 @@
             	<button type="submit" class="btn btn-success">
 					<i class="fa fa-check"></i> Save
 				</button>
-                <a href="<?php echo site_url('barang/index');?>" class="btn btn-danger">
+                <a href="<?php echo site_url('bahan/index'); ?>" class="btn btn-danger">
                     <i class="fa fa-times"></i> Cancel
                 </a>
 	        </div>				

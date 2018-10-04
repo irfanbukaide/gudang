@@ -2,9 +2,9 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Barang</h3>
+                <h3 class="box-title">Bahan</h3>
                 <div class="box-tools">
-                    <a href="<?php echo site_url('barang/add'); ?>" class="btn btn-success btn-sm">Tambah Data</a>
+                    <a href="<?php echo site_url('bahan/add'); ?>" class="btn btn-success btn-sm">Tambah Data</a>
 
                 </div>
             </div>
@@ -19,7 +19,7 @@
                         <th>Status</th>
 						<th>Actions</th>
                     </tr>
-                    <?php foreach($barang as $b){ ?>
+                    <?php foreach ($bahan as $b) { ?>
                     <tr>
 						<td><?php echo $b['brg_kode']; ?></td>
 						<td><?php echo ($b['brg_fast'] ? '<i class="fa fa-check"></i>' : '<i class="fa fa-times"></i>'); ?></td>
@@ -28,8 +28,10 @@
 						<td><?php echo $b['brg_hrg_jual']; ?></td>
                         <td><?php echo $b['brg_status']; ?></td>
 						<td>
-                            <a href="<?php echo site_url('barang/edit/'.$b['brg_id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Edit</a> 
-                            <a href="<?php echo site_url('barang/remove/'.$b['brg_id']); ?>" class="btn btn-danger btn-xs"><span class="fa fa-trash"></span> Delete</a>
+                            <a href="<?php echo site_url('bahan/edit/' . $b['brg_id']); ?>" class="btn btn-info btn-xs"><span
+                                        class="fa fa-pencil"></span> Edit</a>
+                            <a href="<?php echo site_url('bahan/remove/' . $b['brg_id']); ?>"
+                               class="btn btn-danger btn-xs"><span class="fa fa-trash"></span> Delete</a>
                         </td>
                     </tr>
                     <?php } ?>

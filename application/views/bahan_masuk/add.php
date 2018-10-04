@@ -2,22 +2,22 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">Barang Masuk - Tambah Data</h3>
+                <h3 class="box-title">Bahan Masuk - Tambah Data</h3>
             </div>
-            <?php echo form_open('barang_masuk/add'); ?>
+            <?php echo form_open('bahan_masuk/add'); ?>
           	<div class="box-body">
           		<div class="row clearfix">
                     <div class="col-md-12">
-						<label for="brg_id" class="control-label">Barang</label>
+                        <label for="brg_id" class="control-label">Bahan</label>
 						<div class="form-group">
 							<select name="brg_id" class="form-control">
-								<option value="">select barang</option>
-								<?php 
-								foreach($all_barang as $barang)
+                                <option value="">select bahan</option>
+								<?php
+                                foreach ($all_bahan as $bahan)
 								{
-									$selected = ($barang['brg_id'] == $this->input->post('brg_id')) ? ' selected="selected"' : "";
+                                    $selected = ($bahan['brg_id'] == $this->input->post('brg_id')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$barang['brg_id'].'" '.$selected.'>'.$barang['brg_fast'].'</option>';
+                                    echo '<option value="' . $bahan['brg_id'] . '" ' . $selected . '>' . $bahan['brg_kode'] . '</option>';
 								} 
 								?>
 							</select>
@@ -56,6 +56,9 @@
             	<button type="submit" class="btn btn-success">
             		<i class="fa fa-check"></i> Save
             	</button>
+                <a href="<?php echo site_url('bahan_masuk/index'); ?>" class="btn btn-danger">
+                    <i class="fa fa-times"></i> Cancel
+                </a>
           	</div>
             <?php echo form_close(); ?>
       	</div>
