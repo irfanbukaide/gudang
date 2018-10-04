@@ -24,13 +24,17 @@
 					<div class="col-md-12">
 						<label for="brg_hrg_pokok" class="control-label">Harga Pokok</label>
 						<div class="form-group">
-							<input type="text" name="brg_hrg_pokok" placeholder="Harga Pokok" value="<?php echo $this->input->post('brg_hrg_pokok'); ?>" class="form-control" id="brg_hrg_pokok" />
+                            <input type="number" name="brg_hrg_pokok" placeholder="Harga Pokok"
+                                   value="<?php echo $this->input->post('brg_hrg_pokok'); ?>" class="form-control"
+                                   id="brg_hrg_pokok"/>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<label for="brg_hrg_jual" class="control-label">Harga Jual</label>
 						<div class="form-group">
-							<input type="text" name="brg_hrg_jual" placeholder="Harga Jual" value="<?php echo $this->input->post('brg_hrg_jual'); ?>" class="form-control" id="brg_hrg_jual" />
+                            <input type="number" name="brg_hrg_jual" placeholder="Harga Jual"
+                                   value="<?php echo $this->input->post('brg_hrg_jual'); ?>" class="form-control"
+                                   id="brg_hrg_jual"/>
 						</div>
 					</div>
                     <div class="col-md-12">

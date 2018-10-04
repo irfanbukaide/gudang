@@ -2,26 +2,26 @@
     <div class="col-md-12">
       	<div class="box box-info">
             <div class="box-header with-border">
-              	<h3 class="box-title">User > Add</h3>
+                <h3 class="box-title">User - Tambah Data</h3>
             </div>
             <?php echo form_open('user/add'); ?>
           	<div class="box-body">
           		<div class="row clearfix">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="usr_username" class="control-label"><span class="text-danger">*</span>Username</label>
                         <div class="form-group">
                             <input type="text" name="usr_username" placeholder="Username" value="<?php echo $this->input->post('usr_username'); ?>" class="form-control" id="usr_username" />
                             <span class="text-danger"><?php echo form_error('usr_username');?></span>
                         </div>
                     </div>
-					<div class="col-md-6">
+                    <div class="col-md-12">
 						<label for="usr_password" class="control-label"><span class="text-danger">*</span>Password</label>
 						<div class="form-group">
 							<input type="password" name="usr_password" placeholder="Password" value="<?php echo $this->input->post('usr_password'); ?>" class="form-control" id="usr_password" />
 							<span class="text-danger"><?php echo form_error('usr_password');?></span>
 						</div>
 					</div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="usr_privileges" class="control-label">Privileges</label>
                         <div class="form-group">
                             <select name="usr_privileges" class="form-control">
