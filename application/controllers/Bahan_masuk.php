@@ -10,7 +10,7 @@ class Bahan_masuk extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Bahan_masuk_model');
-    } 
+    }
 
     /*
      * Listing of bahan_masuk
@@ -18,6 +18,10 @@ class Bahan_masuk extends CI_Controller
     function index()
     {
         $data['bahan_masuk'] = $this->Bahan_masuk_model->get_all_bahan_masuk();
+        $this->load->model('Bahan_model');
+        $data['bahan'] = function ($brg_id) {
+            return $this->Bahan_model->get_bahan($brg_id);
+        };
 
         $data['_view'] = 'bahan_masuk/index';
         $this->load->view('layouts/main',$data);
@@ -41,6 +45,7 @@ class Bahan_masuk extends CI_Controller
 				'msk_bahan' => $this->input->post('msk_bahan'),
 				'msk_olah_rusak' => $this->input->post('msk_olah_rusak'),
 				'msk_jahit_rusak' => $this->input->post('msk_jahit_rusak'),
+                'created_at' => date('Y-m-d H:i:s'),
             );
 
             $bahan_masuk_id = $this->Bahan_masuk_model->add_bahan_masuk($params);

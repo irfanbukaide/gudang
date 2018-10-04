@@ -10,7 +10,8 @@
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-                        <th>Bahan</th>
+                        <th>Tanggal</th>
+                        <th>Kode Item</th>
                         <th>Jumlah Bahan</th>
                         <th>Jumlah Sablon/Bordir Rusak</th>
                         <th>Jumlah Jahitan Rusak</th>
@@ -18,6 +19,7 @@
                     </tr>
                     <?php foreach ($bahan_masuk as $b) { ?>
                     <tr>
+                        <td><?php echo(date('d F Y', strtotime($b['created_at']))); ?></td>
 						<td><?php echo $b['brg_id']; ?></td>
 						<td><?php echo $b['msk_bahan']; ?></td>
 						<td><?php echo $b['msk_olah_rusak']; ?></td>

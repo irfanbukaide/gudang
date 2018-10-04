@@ -38,6 +38,7 @@ class Bahan_keluar extends CI_Controller
 				'brg_id' => $this->input->post('brg_id'),
 				'rsl_id' => $this->input->post('rsl_id'),
 				'klr_jmlah' => $this->input->post('klr_jmlah'),
+                'created_at' => date('Y-m-d H:i:s'),
             );
 
             $bahan_keluar_id = $this->Bahan_keluar_model->add_bahan_keluar($params);

@@ -11,7 +11,7 @@
                         <label for="brg_id" class="control-label">Bahan</label>
 						<div class="form-group">
 							<select name="brg_id" class="form-control">
-                                <option value="">select bahan</option>
+                                <option value="">Pilih bahan</option>
 								<?php
                                 foreach ($all_bahan as $bahan)
 								{

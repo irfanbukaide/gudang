@@ -38,6 +38,7 @@ class Bahan_retur extends CI_Controller
 				'brg_id' => $this->input->post('brg_id'),
 				'rsl_id' => $this->input->post('rsl_id'),
 				'rtr_jmlah' => $this->input->post('rtr_jmlah'),
+                'created_at' => date('Y-m-d H:i:s'),
             );
 
             $bahan_retur_id = $this->Bahan_retur_model->add_bahan_retur($params);
